@@ -1,7 +1,7 @@
 # phenolytics_computational_analysis-
 
 
-Methods
+# Methods
 Molecular Dataset Preparation
 A curated dataset of phenolic and polyphenolic compounds was compiled using compound names as primary identifiers. Canonical SMILES representations were obtained either manually or programmatically via the PubChem database to ensure unambiguous molecular structures. All subsequent calculations were performed using these standardised molecular representations.
 3D Geometry Construction
