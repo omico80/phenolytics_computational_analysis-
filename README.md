@@ -2,7 +2,7 @@
 
 
 # Methods
-Molecular Dataset Preparation
+# Molecular Dataset Preparation
 A curated dataset of phenolic and polyphenolic compounds was compiled using compound names as primary identifiers. Canonical SMILES representations were obtained either manually or programmatically via the PubChem database to ensure unambiguous molecular structures. All subsequent calculations were performed using these standardised molecular representations.
 3D Geometry Construction
 Initial three-dimensional molecular geometries were generated from SMILES strings using RDKit. Explicit hydrogen atoms were added, followed by the generation of conformers via distance geometry. A preliminary geometry optimisation was performed using the Universal Force Field (UFF) to obtain physically reasonable starting structures for quantum mechanical calculations.
@@ -10,7 +10,7 @@ Semi-Empirical Quantum Mechanical Calculations
 Quantum mechanical calculations were conducted using the MOPAC software package (version 2016). Geometry optimisations were carried out using the PM7 semi-empirical Hamiltonian with the Eigenvector-Following (EF) optimisation algorithm. Default convergence criteria were applied unless otherwise specified.
 Each molecule was processed individually, producing standard MOPAC output (.out) and archive (.arc) files. Calculations that did not converge successfully were excluded from the descriptor extraction process.
 Extraction of Quantum Mechanical Descriptors
-Quantum mechanical descriptors were parsed directly from MOPAC output files using automated text-processing routines. Extracted descriptors included energetic, electronic, and reactivity-related quantities, such as:
+# Quantum mechanical descriptors were parsed directly from MOPAC output files using automated text-processing routines. Extracted descriptors included energetic, electronic, and reactivity-related quantities, such as:
     • Heat of formation
     • Highest occupied molecular orbital (HOMO) energy
     • Lowest unoccupied molecular orbital (LUMO) energy
