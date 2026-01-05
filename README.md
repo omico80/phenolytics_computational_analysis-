@@ -50,5 +50,18 @@ Software and Environment
 
 All data processing and analysis were conducted using Python (version ≥ 3.9) with the following libraries: RDKit, NumPy, and Pandas. Quantum calculations were performed using MOPAC2016 on a Linux-based system
 
+# Particularities of the Method
 
+In this QSAR study, the chemical structures of phenolic compounds—molecules containing a phenol functional group and primarily used as antioxidants—were correlated with their biological activity measured as Trolox-Equivalent Antioxidant Capacity (TEAC). A comprehensive set of physicochemical and structural descriptors was generated during feature engineering, from which the most relevant features were identified using three complementary feature-selection strategies.
+
+Initially, correlation analysis and Random Forest–based importance ranking were employed to remove redundant and weakly informative descriptors. This was followed by Support Vector–based feature evaluation and, finally, Gaussian Process–based feature selection, which accounts for nonlinear relationships and uncertainty in the data.
+
+The limited sample size posed a significant challenge in assessing the generalisation ability of the derived QSAR models, particularly with respect to accurately predicting TEAC values for unseen compounds. To address this, multiple regression approaches were systematically evaluated, including simple linear regression, Elastic Net regression, Support Vector Regression (SVR), and Gaussian Process Regression (GPR). Model performance was assessed using consistent evaluation metrics across all methods.
+
+Among the evaluated models, Gaussian Process Regression, a non-parametric Bayesian approach, demonstrated superior predictive performance. Its ability to model complex nonlinear relationships while explicitly accounting for uncertainty enabled more accurate prediction of antioxidant activity based on the physicochemical properties of phenolic compounds.
+
+# References 
+The TEAC values were collected from:
+Cai, Y. Z., Mei, S., Jie, X., Luo, Q. & Corke, H. Structure-radical scavenging activity relationships of phenolic compounds from
+traditional Chinese medicinal plants. Life. Sci. 78(25), 2872–2888 (2006).
       │
