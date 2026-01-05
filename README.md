@@ -2,7 +2,7 @@
 
 
 # Methods
-# Molecular Dataset Preparation
+Molecular Dataset Preparation
 A curated dataset of phenolic and polyphenolic compounds was compiled using compound names as primary identifiers. Canonical SMILES representations were obtained either manually or programmatically via the PubChem database to ensure unambiguous molecular structures. All subsequent calculations were performed using these standardised molecular representations.
 3D Geometry Construction
 
@@ -14,7 +14,7 @@ Quantum mechanical calculations were conducted using the MOPAC software package 
 Each molecule was processed individually, producing standard MOPAC output (.out) and archive (.arc) files. Calculations that did not converge successfully were excluded from the descriptor extraction process.
 Extraction of Quantum Mechanical Descriptors
 
-# Quantum mechanical descriptors were parsed directly from MOPAC output files using automated text-processing routines. Extracted descriptors included energetic, electronic, and reactivity-related quantities, such as:
+Quantum mechanical descriptors were parsed directly from MOPAC output files using automated text-processing routines. Extracted descriptors included energetic, electronic, and reactivity-related quantities, such as:
     • Heat of formation
     • Highest occupied molecular orbital (HOMO) energy
     • Lowest unoccupied molecular orbital (LUMO) energy
@@ -25,7 +25,7 @@ Extraction of Quantum Mechanical Descriptors
 Derived reactivity indices were computed according to conceptual density functional theory, including chemical hardness, softness, and electrophilicity.
 Cheminformatics Descriptor Calculation
 
-# In parallel with quantum calculations, additional physicochemical and structural descriptors were computed from SMILES representations using RDKit. These included:
+In parallel with quantum calculations, additional physicochemical and structural descriptors were computed from SMILES representations using RDKit. These included:
     • Molecular weight
     • Topological polar surface area (TPSA)
     • LogP
