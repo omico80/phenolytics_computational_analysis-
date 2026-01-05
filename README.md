@@ -18,6 +18,7 @@ Extraction of Quantum Mechanical Descriptors
 # Quantum Mechanical Descriptors 
 
 Quantum mechanical descriptors were parsed directly from MOPAC output files using automated text-processing routines. Extracted descriptors included energetic, electronic, and reactivity-related quantities, such as:
+
     • Heat of formation
     • Highest occupied molecular orbital (HOMO) energy
     • Lowest unoccupied molecular orbital (LUMO) energy
@@ -31,6 +32,7 @@ Cheminformatics Descriptor Calculation
 # Topographical and Topological Molecular Descriptors 
 
 In parallel with quantum calculations, additional physicochemical and structural descriptors were computed from SMILES representations using RDKit. These included:
+
     • Molecular weight
     • Topological polar surface area (TPSA)
     • LogP
